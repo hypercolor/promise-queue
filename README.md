@@ -37,7 +37,7 @@ const exampleFunction = async (array: any[]) => {
         console.log("Processed item " + index + 1 + ' of ' + array.length + ' items.);
     }));
     
-    // Return Array of Processed items:
+    // Return Array of Processed Items:
     const results = await new PromiseQueue(1).runall(array.map((item, index) => async () => {
         //do something with the item
         const result = doSomethingAndReturnResult(item);
