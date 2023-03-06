@@ -1,0 +1,35 @@
+{
+  "name": "@hypercolor/promise-queue",
+  "version": "0.0.1",
+  "description": "Used by the Hypercolor Digital team to support concurrent looping over an array. Supports a concurrency count to control how many promises may be resolved at once",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
+  "private": false,
+  "prepublish": "tsc --build --clean && tsc --build",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build"
+  },
+  "keywords": [
+    "promise",
+    "queue",
+    "async",
+    "loop",
+    "concurrent",
+    "loop"
+  ],
+  "author": "Seth Uschuk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypercolor/promise-queue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hypercolor/promise-queue/issues"
+  },
+  "homepage": "https://github.com/hypercolor/promise-queue#readme"
+}
