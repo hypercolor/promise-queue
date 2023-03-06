@@ -30,10 +30,19 @@ const exampleFunction = async (array: any[]) => {
     Accepts argument for maxConcurrent Promises to process.
     */
   
+    //Void Returning Example:
     await new PromiseQueue(1).runall(array.map((item, index) => async () => {
         //do something with the item
         await doSomething(item);
         console.log("Processed item " + index + 1 + ' of ' + array.length + ' items.);
+    }));
+    
+    // Return Array of Processed items:
+    const results = await new PromiseQueue(1).runall(array.map((item, index) => async () => {
+        //do something with the item
+        const result = doSomethingAndReturnResult(item);
+        console.log("Processed item " + index + 1 + ' of ' + array.length + ' items.);
+        return result;
     }));
 };
 ```
