@@ -1,6 +1,6 @@
 {
   "name": "@hypercolor/promise-queue",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Used by the Hypercolor Digital team to support concurrent looping over an array. Supports a concurrency count to control how many promises may be resolved at once",
   "main": "index.js",
   "types": "index.d.ts",
