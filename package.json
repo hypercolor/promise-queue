@@ -1,6 +1,6 @@
 {
   "name": "@hypercolor/promise-queue",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Used by the Hypercolor Digital team to support concurrent looping over an array. Supports a concurrency count to control how many promises may be resolved at once",
   "main": "index.js",
   "types": "index.d.ts",
@@ -26,13 +26,13 @@
     "loop"
   ],
   "dependencies": {
-    "p-queue": "^7.3.4"
+    "p-queue": "2.4.2",
+    "tslint-loader": "^3.5.4"
   },
   "devDependencies": {
     "@types/p-queue": "^3.2.1",
     "ts-loader": "^9.4.2",
     "tslint": "^6.1.3",
-    "tslint-loader": "^3.5.4",
     "typescript": "^4.9.4"
   },
   "author": "Seth Uschuk",
