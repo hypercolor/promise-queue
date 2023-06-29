@@ -1,6 +1,6 @@
 {
   "name": "@hypercolor/promise-queue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Used by the Hypercolor Digital team to support concurrent looping over an array. Supports a concurrency count to control how many promises may be resolved at once",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,8 +22,12 @@
     "async",
     "loop",
     "concurrent",
+    "concurrent",
     "loop"
   ],
+  "dependencies": {
+    "p-queue": "^7.3.4"
+  },
   "devDependencies": {
     "@types/p-queue": "^3.2.1",
     "ts-loader": "^9.4.2",
@@ -41,7 +45,4 @@
     "url": "https://github.com/hypercolor/promise-queue/issues"
   },
   "homepage": "https://github.com/hypercolor/promise-queue#readme",
-  "dependencies": {
-    "p-queue": "^7.3.4"
-  }
 }

@@ -1,3 +1,1 @@
-import {PromiseQueue} from "./src/promise-queue";
-
-export default PromiseQueue;
+export {PromiseQueue} from "./src/promise-queue";
